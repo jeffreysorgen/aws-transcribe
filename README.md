@@ -6,7 +6,7 @@ Here is the yaml code which I will use in cloudformation:
 
 This CloudFormation template creates the S3 bucket with subdirectories, Lambda functions, and IAM roles for those Lambda functions. There are placeholders in this code which need the proper updates. Also, zip files for the Lambdas.
 
-''' yaml
+``` yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Create S3 Bucket with Subdirectories and Lambda Functions
 
@@ -154,4 +154,4 @@ Resources:
                   - s3:PutObject
                 Resource: !Sub ${MediaBucket.Arn}/results/*
 
-'''
+```

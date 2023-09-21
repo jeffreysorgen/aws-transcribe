@@ -2,9 +2,9 @@
 _Early version of the AWS architecture for the Pre-Transcribe tool._
 <img src="/arch-transcribe.png"/>
 
-Here is the yaml code which I will use in cloudformation:
+**Here is the YAML template that I use in CloudFormation:**
 
-This CloudFormation template creates the S3 bucket with subdirectories, Lambda functions, and IAM roles for those Lambda functions. There are placeholders in this code which need the proper updates. Also, zip files for the Lambdas.
+This CloudFormation template creates the S3 bucket with subdirectories, Lambda functions, and IAM roles for those Lambda functions. There are placeholders in this code which get properly updated, and Lambda deployment packages are properly added.
 
 ``` yaml
 AWSTemplateFormatVersion: "2010-09-09"
